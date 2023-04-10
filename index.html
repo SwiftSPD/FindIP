@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by hexagonQWERTY</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Find My IP Address</title>
+
+  <script>
+
+    function getIP(json) {
+
+      document.getElementById("ip-address").innerHTML = json.ip;
+
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <h1>My IP Address is:</h1>
+
+  <p id="ip-address">Loading...</p>
+
+  <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
